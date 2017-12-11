@@ -13,6 +13,16 @@ pub enum Health {
     Critical
 }
 
+// Hygiene is a crude indicator of general hygiene
+#[derive (Debug, PartialEq)]
+pub enum Hygiene {
+    LynxAfrica,
+    Passable,
+    NotBad,
+    Claggy,
+    Minging
+}
+
 pub struct Player{
     energy:u8,
     hunger: u8,
